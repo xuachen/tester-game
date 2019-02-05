@@ -1,1 +1,3 @@
 target/*
+src/main/csharp/game/bin/*
+src/main/csharp/game/obj/*
