@@ -1,3 +1,7 @@
 target/*
 src/main/csharp/game/bin/*
 src/main/csharp/game/obj/*
+src/main/csharp/bin/*
+src/main/csharp/obj/*
+src/main/csharp/.vs/*
+src/main/csharp/game/.vs/*
