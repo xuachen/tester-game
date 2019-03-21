@@ -7,3 +7,6 @@ class App {
         block.interact();
     }
 }
+
+const app: App = new App();
+app.main();

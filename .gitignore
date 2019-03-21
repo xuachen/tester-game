@@ -5,3 +5,6 @@ src/main/csharp/bin/*
 src/main/csharp/obj/*
 src/main/csharp/.vs/*
 src/main/csharp/game/.vs/*
+
+# TypeScript
+src/main/typescript/game/lib
