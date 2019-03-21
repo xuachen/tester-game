@@ -1,5 +1,3 @@
-package game;
-
 class GameObject implements Interactive, Drawable
 {
     int posX, posY;

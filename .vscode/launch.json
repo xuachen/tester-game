@@ -8,11 +8,17 @@
             "type": "node",
             "request": "launch",
             "name": "TypeScript",
-            "program": "${workspaceFolder}/src/main/typescript/game/lib/App.js",
+            "program": "${workspaceFolder}/typescript/lib/App.js",
             "outFiles": [
-				"${workspaceFolder}/src/main/typescript/game/lib/**/*.js"
+				"${workspaceFolder}/typescript/lib/**/*.js"
             ],
             "sourceMaps": true,
+        },
+        {
+            "type": "java",
+            "request": "launch",
+            "name": "Java",
+            "mainClass": "App",
         }
     ]
 }

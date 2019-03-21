@@ -1,10 +1,10 @@
-target/*
-src/main/csharp/game/bin/*
-src/main/csharp/game/obj/*
-src/main/csharp/bin/*
-src/main/csharp/obj/*
-src/main/csharp/.vs/*
-src/main/csharp/game/.vs/*
+# C#
+csharp/bin/*
+csharp/obj/*
+csharp/.vs/*
 
 # TypeScript
-src/main/typescript/game/lib
+typescript/lib
+
+# Java
+java/lib

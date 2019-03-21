@@ -3,8 +3,8 @@
     "target": "es5",
     "module": "commonjs",
     "sourceMap": true,
-    "outDir": "./game/lib",
-    "rootDir": "./game",
+    "outDir": "./lib",
+    "rootDir": "./src",
     "alwaysStrict": true,
     "noImplicitAny": true,
     "esModuleInterop": true

@@ -49,11 +49,11 @@
     <None Include=".vs\TesterGame\v15\Server\sqlite3\storage.ide-wal" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="game\Block.cs" />
-    <Compile Include="game\Drawable.cs" />
-    <Compile Include="game\GameObject.cs" />
-    <Compile Include="game\Interactive.cs" />
-    <Compile Include="game\Program.cs" />
+    <Compile Include="src\Block.cs" />
+    <Compile Include="src\Drawable.cs" />
+    <Compile Include="src\GameObject.cs" />
+    <Compile Include="src\Interactive.cs" />
+    <Compile Include="src\Program.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
   <ProjectExtensions>
