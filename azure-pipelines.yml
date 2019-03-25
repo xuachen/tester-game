@@ -24,4 +24,3 @@ steps:
     nugetpat: 'vscloudkernel-nuget'
     language: 'typescript;csharp'
     githubpat: 'jumattos'
-    nugetVersion: 'latest'
