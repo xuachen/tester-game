@@ -9,8 +9,6 @@ class App {
 
         let dialog: Interactive = new Dialog();
         dialog.interact();
-
-        console.log("Hope it works this time!");
     }
 }
 
