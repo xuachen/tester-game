@@ -21,7 +21,7 @@ steps:
   displayName: 'VS IntelliNav Upload'
   inputs:
     vsckEndpoint: 'vscloudkernel-dev'
-    nugetpat: 'vscloudkernel-nuget'
+    nugetpat: 'vsck-nuget'
     language: 'typescript;csharp'
     githubpat: 'jumattos'
     nugetVersion: 'latest'
