@@ -7,6 +7,7 @@ class App {
         let block: Interactive = new GameObject(10, 10);
         block.interact();
 
+        // No comment required
         let dialog: Interactive = new Dialog();
         dialog.interact();
     }
