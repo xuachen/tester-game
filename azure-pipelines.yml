@@ -1,0 +1,14 @@
+trigger:
+  branches:
+    include: ["master", "*"]
+
+pool:
+  vmImage: 'windows-latest'
+
+steps:
+- task: RichCodeNavIndexer@0
+  inputs:
+    serviceConnection: 'Rich Code Nav'
+    languages: 'csharp,typescript,java'
+    githubServiceConnection: 'GitHub'
+    environment: 'development'
