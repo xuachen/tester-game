@@ -6,10 +6,8 @@ pool:
 
 steps:
 - task: RichCodeNavIndexer@0
-  continueOnError: true
   inputs:
     serviceConnection: 'Rich Code Nav'
-    githubServiceConnection: 'GitHub'
     languages: 'typescript,csharp,java'
-    isPrivateFeed: true
-    environment: development
+    githubServiceConnection: 'GitHub'
+    environment: 'development'
