@@ -1,6 +1,6 @@
-trigger:
-  branches:
-    include: ["master", "*"]
+# trigger:
+#   branches:
+#     include: ["master", "*"]
 
 pool:
   vmImage: 'vs2017-win2016'
