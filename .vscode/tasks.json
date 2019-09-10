@@ -9,13 +9,6 @@
             "command": "javac ${workspaceFolder}/java/src/*.java -d ${workspaceFolder}/java/lib/",
             "group": "build",
             "problemMatcher": []
-        },
-        {
-            "label": "typescript",
-            "type": "shell",
-            "command": "tsc -p ${workspaceFolder}/typescript/tsconfig.json",
-            "group": "build",
-            "problemMatcher": []
         }
     ]
 }
