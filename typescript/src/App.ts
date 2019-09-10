@@ -4,6 +4,7 @@ import Dialog from './Dialog'
 
 class App {
     // TRIGGER ME PLS
+    // pretty please?
     main(): void {
         let block: Interactive = new GameObject(10, 10);
         block.interact();
