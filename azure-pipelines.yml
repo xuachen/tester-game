@@ -1,0 +1,19 @@
+pr:
+  branches:
+    include:
+    - master
+    - '*'
+
+pool:
+  vmImage: 'vs2017-win2016'
+
+steps:
+- task: RichCodeNavIndexer@0
+  inputs:
+    serviceConnection: 'Rich Code Nav'
+    languages: 'csharp,typescript,java'
+    githubServiceConnection: 'GitHub'
+    nugetFeed: 'https://pkgs.dev.azure.com/jumattos/_packaging/rich-code-nav-dev/nuget/v3/index.json'
+    nugetVersion: '0.1.1099-alpha'
+    environment: 'development'
+    isPrivateFeed: true
