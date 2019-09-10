@@ -2,8 +2,8 @@ trigger:
   branches:
     include: ["master", "*"]
 
-pool:
-  vmImage: 'windows-latest'
+queue:
+  name: VSEng-MicroBuildVS2019
 
 steps:
 - task: RichCodeNavIndexer@0
