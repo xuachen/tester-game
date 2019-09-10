@@ -3,11 +3,11 @@ import GameObject from './GameObject'
 import Dialog from './Dialog'
 
 class App {
+    // TRIGGER ME PLS
     main(): void {
         let block: Interactive = new GameObject(10, 10);
         block.interact();
 
-        // No comment required
         let dialog: Interactive = new Dialog();
         dialog.interact();
     }
