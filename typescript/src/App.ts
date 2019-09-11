@@ -3,7 +3,6 @@ import GameObject from './GameObject'
 import Dialog from './Dialog'
 
 class App {
-    // Yet another commit
     main(): void {
         let block: Interactive = new GameObject(10, 10);
         block.interact();
