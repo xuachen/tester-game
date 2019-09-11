@@ -4,6 +4,7 @@ import Dialog from './Dialog'
 
 class App {
     main(): void {
+        // A test
         let block: Interactive = new GameObject(10, 10);
         block.interact();
 
