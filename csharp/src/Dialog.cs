@@ -6,7 +6,6 @@ namespace game
     {
         public Dialog(): base(){}
 
-        // An interaction
         public void interact()
         {
             Console.WriteLine("Interacting with dialog");
