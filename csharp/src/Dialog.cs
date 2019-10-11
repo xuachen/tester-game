@@ -8,6 +8,7 @@ namespace game
 
         public void interact()
         {
+            // change
             Console.WriteLine("Interacting with dialog");
         }
     }
