@@ -1,8 +1,8 @@
 import Interactive from './Interactive'
 
 export default class Dialog implements Interactive {
-    // again
     interact(): void {
+        // Another try
         console.log("Interacting with dialog");
     }
 }
