@@ -2,8 +2,7 @@ import Interactive from './Interactive'
 
 export default class Dialog implements Interactive {
     interact(): void {
-        // Hopeful this time 😇
-        // Still working? 🤞🤞🤞🤞🤞
+        // Did we trigger the bug? 🐛
         console.log("Interacting with dialog");
     }
 }
