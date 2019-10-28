@@ -2,6 +2,7 @@ using System;
 
 namespace game
 {
+    //
     class GameObject: Drawable, Interactive
     {
         private int posX, posY;

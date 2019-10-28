@@ -49,6 +49,7 @@
     <None Include=".vs\TesterGame\v15\Server\sqlite3\storage.ide-wal" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\Dialog.cs" />
     <Compile Include="src\Block.cs" />
     <Compile Include="src\Drawable.cs" />
     <Compile Include="src\GameObject.cs" />
