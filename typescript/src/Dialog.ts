@@ -2,7 +2,7 @@ import Interactive from './Interactive'
 
 export default class Dialog implements Interactive {
     interact(): void {
-        // Trigger build!
+        // PROD, please work!
         console.log("Interacting with dialog");
     }
 }
