@@ -9,6 +9,9 @@ class App {
 
         let dialog: Interactive = new Dialog();
         dialog.interact();
+      
+        let otherBlock: Interactive = new GameObject(5, 5);
+        otherBlock.interact();
     }
 }
 
