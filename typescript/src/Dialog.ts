@@ -2,7 +2,7 @@ import Interactive from './Interactive'
 
 export default class Dialog implements Interactive {
     interact(): void {
-        // PROD, please work!
+        // INT working?
         console.log("Interacting with dialog");
     }
 }
