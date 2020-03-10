@@ -2,6 +2,7 @@ import Interactive from './Interactive'
 import GameObject from './GameObject'
 import Dialog from './Dialog'
 
+// Testing int 🚀
 class App {
     main(): void {
         let block: Interactive = new GameObject(10, 10);
