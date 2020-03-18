@@ -1,19 +1,12 @@
-# tester-game
+# Rich Code Navigation Indexed Code Samples
 
-## Build Status
+This is a sample code base used to validate Rich Code Nav indexing against DEV, INT, and PROD environments.
 
-### DEV
-
-[![Build Status](https://dev.azure.com/jumattos/Tester-Game/_apis/build/status/GitHub/DEV?branchName=master)](https://dev.azure.com/jumattos/Tester-Game/_build/latest?definitionId=10&branchName=master)
-
-### INT
-
-[![Build Status](https://dev.azure.com/jumattos/Tester-Game/_apis/build/status/GitHub/INT?branchName=master)](https://dev.azure.com/jumattos/Tester-Game/_build/latest?definitionId=13&branchName=master)
-
-### PROD
-
-[![Build Status](https://dev.azure.com/jumattos/Tester-Game/_apis/build/status/GitHub/PROD?branchName=master)](https://dev.azure.com/jumattos/Tester-Game/_build/latest?definitionId=11&branchName=master)
+## Validation steps
+1. Push any commit to any branch to trigger the build, typically a trivial comment change.
+1. Monitor the indexing task and make sure the build succeeded.
+1. Use the [Rich Nav chrome extension](https://chrome.google.com/webstore/detail/intellinav/dpafdcoicfffinjoondenocgljiaepfj) to validate code navigation on the commit that was indexed against the target environment.
 
 ## Known issues
 
-Java project is missing pom.xml/build.gradle file
+"java" project is missing pom.xml/build.gradle file
