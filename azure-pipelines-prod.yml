@@ -29,6 +29,7 @@ steps:
   inputs:
     serviceConnection: 'richCodeNav-Token-Prod'
     languages: 'csharp,typescript,java,cpp'
+    githubServiceConnection: 'github-oauth'
     environment: production
     isPrivateFeed: false
   continueOnError: true

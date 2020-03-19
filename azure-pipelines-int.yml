@@ -29,6 +29,7 @@ steps:
   inputs:
     serviceConnection: 'richCodeNav-Token-Int'
     languages: 'csharp,typescript,java,cpp'
+    githubServiceConnection: 'github-oauth'
     environment: staging
     isPrivateFeed: false
   continueOnError: true
