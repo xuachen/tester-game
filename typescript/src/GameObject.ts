@@ -6,6 +6,7 @@ export default class GameObject implements Drawable, Interactive {
     posY: number;
 
     constructor(x: number, y: number) {
+        console.log('In a constructor!');
         this.posX = x;
         this.posY = y;
     }
