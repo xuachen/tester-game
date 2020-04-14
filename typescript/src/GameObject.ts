@@ -13,6 +13,7 @@ export default class GameObject implements Drawable, Interactive {
 
     interact(): void {
         console.log("Interacting with GameObject");
+        console.log("GameObject says hi!");
     }
 
     draw(): void {
