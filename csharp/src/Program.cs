@@ -6,6 +6,7 @@ namespace game
     {
         static void Main(string[] args)
         {
+            // hello
             Interactive block = new GameObject(10, 10);
             block.interact();
         }
