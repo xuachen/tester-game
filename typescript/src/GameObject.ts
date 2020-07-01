@@ -16,5 +16,6 @@ export default class GameObject implements Drawable, Interactive {
 
     draw(): void {
         console.log(`Drawing GameObject at position: ${this.posX} ${this.posY}`);
+        console.log('hi, mom!!');
     }
 }
