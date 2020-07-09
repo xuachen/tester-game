@@ -7,7 +7,7 @@ namespace game
         static void Main(string[] args)
         {
             // updating comment for int testing
-            Interactive block = new GameObject(10, 10);
+            Interactive block = new GameObject(10, 15);
             block.interact();
         }
     }
