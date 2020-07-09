@@ -1,0 +1,37 @@
+# Runs weekly or after every push to all branches to validate indexing against development environment
+
+trigger:
+  branches:
+    include: ["master", "*"]
+  paths:
+    exclude: ["doc", "*.md"]
+
+schedules:
+- cron: "0 15 * * Wed" # Wed @ 8 or 9 AM Mountain Time (depending on DST)
+  displayName: Weekly Development Environment Validation Run
+  branches:
+    include:
+    - master
+  always: true
+
+queue:
+  name: Hosted VS2017
+  timeoutInMinutes: 60
+
+steps:
+- task: NodeTool@0
+  displayName: 'Use Node 10.x'
+  inputs:
+    versionSpec: 10.x
+
+- task: MS-RichCodeNav.Indexer.build-task.RichCodeNavIndexer@0
+  displayName: Rich Code Navigation Upload to Development
+  inputs:
+    serviceConnection: 'richCodeNav-Token-Dev'
+    languages: 'csharp,typescript,java,cpp'
+    githubServiceConnection: 'xuachen'
+    nugetFeed: 'https://devdiv.pkgs.visualstudio.com/Personal/_packaging/richnav/nuget/v3/index.json'
+    isPrivateFeed: true
+    nugetVersion: '0.1.1382-alpha'
+    environment: development
+  continueOnError: true
