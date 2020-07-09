@@ -1,0 +1,33 @@
+### This template is meant to be used by a .NET Core repository running RichNav
+### Please fill anything marked above with a "# **** #" comment with the value appropriate for your repository
+
+name: Rich Code Navigation (Node JS)
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+
+jobs:
+  richnav:
+
+    runs-on: windows-latest
+
+    # **** If necessary, use the Node version for your repository. Note: must be greater than 10.x **** #
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm ci
+    
+    - uses: microsoft/RichCodeNavIndexer@master
+      with: 
+        languages: typescript
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+     
