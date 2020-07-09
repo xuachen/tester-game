@@ -5,6 +5,7 @@ csharp/.vs/*
 
 # TypeScript
 typescript/lib
+node_modules
 
 # Java
 java/lib
