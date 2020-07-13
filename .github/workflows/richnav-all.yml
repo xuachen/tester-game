@@ -44,4 +44,4 @@ jobs:
     - uses: microsoft/RichCodeNavIndexer@v0.1
       with: 
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        languages: csharp, java, typescript, cpp
+        languages: csharp,java,typescript,cpp
