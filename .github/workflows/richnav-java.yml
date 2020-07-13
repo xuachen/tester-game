@@ -21,7 +21,7 @@ jobs:
       with:
         java-version: 1.8
 
-    - uses: microsoft/RichCodeNavIndexer@master
+    - uses: microsoft/RichCodeNavIndexer@v0.1
       with: 
         languages: java
         repo-token: ${{ secrets.GITHUB_TOKEN }}
