@@ -33,8 +33,14 @@ jobs:
       with:
         node-version: 12.x
 
+    # **** Please update, at least, the working directory below. You may also want to use npm install instead **** #
     - run: yarn
       working-directory: typescript
+    
+    # **** If you use NPM to install packages, please uncomment this task and delete the yarn task **** #
+    # - name: npm install
+    #   working-directory: typescript
+    #   run: npm install
 
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
