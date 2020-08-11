@@ -23,10 +23,10 @@ steps:
   displayName: 'Use Node 10.x'
   inputs:
     versionSpec: 10.x
-- uses: actions/setup-dotnet@v1.5.0
-  displayName: Install .NET Core 2.2
-  with:
-    dotnet-version: 2.2
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '2.2'
 - task: MS-RichCodeNav.Indexer.build-task.RichCodeNavIndexer@0
   displayName: Rich Code Navigation Upload to Development
   inputs:
