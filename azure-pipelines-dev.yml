@@ -31,6 +31,5 @@ steps:
     githubServiceConnection: 'xuachen'
     nugetFeed: 'https://devdiv.pkgs.visualstudio.com/Personal/_packaging/richnav/nuget/v3/index.json'
     isPrivateFeed: true
-    nugetVersion: '0.1.1688-alpha'
     environment: development
   continueOnError: true
