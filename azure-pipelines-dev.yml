@@ -23,7 +23,10 @@ steps:
   displayName: 'Use Node 10.x'
   inputs:
     versionSpec: 10.x
-
+- task: UseDotNet@2
+  inputs:
+    packageType: 'sdk'
+    version: '2.2.x'
 - task: MS-RichCodeNav.Indexer.build-task.RichCodeNavIndexer@0
   displayName: Rich Code Navigation Upload to Development
   inputs:
@@ -32,6 +35,6 @@ steps:
     githubServiceConnection: 'xuachen'
     nugetFeed: 'https://devdiv.pkgs.visualstudio.com/Personal/_packaging/richnav/nuget/v3/index.json'
     isPrivateFeed: true
-    nugetVersion: '0.1.1617-alpha'
+    nugetVersion: '0.1.1688-alpha'
     environment: development
   continueOnError: true

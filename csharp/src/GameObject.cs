@@ -21,5 +21,10 @@ namespace game
         {
             Console.WriteLine($"Drawing GameObject at position: {this.posX} {this.posY}");
         }
+
+        public void otherMethod()
+        {
+            Console.WriteLine("Something");
+        }
     }
 }
