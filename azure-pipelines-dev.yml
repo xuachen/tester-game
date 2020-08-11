@@ -23,8 +23,8 @@ steps:
   displayName: 'Use Node 10.x'
   inputs:
     versionSpec: 10.x
-- name: Install .NET Core 2.2
-  uses: actions/setup-dotnet@v1.5.0
+- uses: actions/setup-dotnet@v1.5.0
+  displayName: Install .NET Core 2.2
   with:
     dotnet-version: 2.2
 - task: MS-RichCodeNav.Indexer.build-task.RichCodeNavIndexer@0
@@ -35,6 +35,6 @@ steps:
     githubServiceConnection: 'xuachen'
     nugetFeed: 'https://devdiv.pkgs.visualstudio.com/Personal/_packaging/richnav/nuget/v3/index.json'
     isPrivateFeed: true
-    nugetVersion: '0.1.1682-alpha'
+    # nugetVersion: '0.1.1682-alpha'
     environment: development
   continueOnError: true
