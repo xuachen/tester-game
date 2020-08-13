@@ -10,7 +10,9 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: microsoft/RichCodeNavIndexer@v0.1
+    - run: node -v
+    - run: pwd
+    - uses: microsoft/RichCodeNavIndexer@diagnose
       with:
         languages: 'csharp,typescript,java,cpp'
         environment: 'development'
