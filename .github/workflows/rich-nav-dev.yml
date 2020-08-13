@@ -10,10 +10,8 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
-    - run: node -v
-    - run: pwd
     - uses: microsoft/RichCodeNavIndexer@diagnose
       with:
         languages: 'csharp,typescript,java,cpp'
-        environment: 'development'
+        environment: 'production'
       continue-on-error: true
