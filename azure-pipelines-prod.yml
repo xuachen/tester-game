@@ -19,11 +19,6 @@ queue:
   timeoutInMinutes: 60
 
 steps:
-- task: NodeTool@0
-  displayName: 'Use Node 10.x'
-  inputs:
-    versionSpec: 10.x
-
 - task: MS-RichCodeNav.Indexer.build-task.RichCodeNavIndexer@0
   displayName: Rich Code Navigation Upload to Production
   inputs:
@@ -31,6 +26,6 @@ steps:
     languages: 'csharp,typescript,java,cpp'
     githubServiceConnection: 'xuachen'
     environment: production
-    isPrivateFeed: false
+    richNavLogOutputDirectory: $(Build.SourcesDirectory)/artifacts/bin
   continueOnError: true
 
