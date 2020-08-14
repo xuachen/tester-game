@@ -27,5 +27,7 @@ steps:
     githubServiceConnection: 'xuachen'
     environment: production
     richNavLogOutputDirectory: $(Build.SourcesDirectory)/artifacts/bin
+  env:
+      DOTNET_ROOT: $(Build.SourcesDirectory)/.dotnet
   continueOnError: true
 
