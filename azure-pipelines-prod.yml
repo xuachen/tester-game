@@ -19,6 +19,15 @@ queue:
   timeoutInMinutes: 60
 
 steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      [Net.ServicePointManager]::SecurityProtocol
+      $DotNetInstallScriptRoot = [System.Environment]::GetEnvironmentVariable("TEMP")
+      $DownloadUri = "https://dot.net/v1/dotnet-install.ps1"
+      $DotNetInstallScriptPath = "$DotNetInstallScriptRoot/dotnet-install.ps1"
+      Invoke-WebRequest -Uri $DownloadUri -OutFile $DotNetInstallScriptPath -UseBasicParsing
 - task: MS-RichCodeNav.Indexer.build-task.RichCodeNavIndexer@0
   displayName: Rich Code Navigation Upload to Production
   inputs:
@@ -27,7 +36,5 @@ steps:
     githubServiceConnection: 'xuachen'
     environment: production
     richNavLogOutputDirectory: $(Build.SourcesDirectory)/artifacts/bin
-  env:
-      DOTNET_ROOT: $(Build.SourcesDirectory)/.dotnet
   continueOnError: true
 
