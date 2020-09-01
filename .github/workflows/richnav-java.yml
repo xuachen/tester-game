@@ -1,4 +1,4 @@
-### This template is meant to be used by a .NET Core repository running RichNav
+### This template is meant to be used by a Java repository running RichNav
 ### Please fill anything marked above with a "# **** #" comment with the value appropriate for your repository
 
 name: Rich Code Navigation (Java with Maven)
@@ -6,7 +6,8 @@ name: Rich Code Navigation (Java with Maven)
 on:
   pull_request:
   push:
-    branches: [ master ]
+  # **** Add any the name of your default branch, or any branch you want indexed on every push **** #
+    branches: [ main ]
 
 jobs:
   richnav:

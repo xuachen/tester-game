@@ -1,11 +1,12 @@
-### This template is meant to be used by a .NET Core repository running RichNav
+### This template is meant to be used by a C# repository running RichNav
 ### Please fill anything marked above with a "# **** #" comment with the value appropriate for your repository
 name: Rich Code Navigation (.NET Core)
 
 on:
   pull_request:
   push:
-    branches: [ master ]
+  # **** Add any the name of your default branch, or any branch you want indexed on every push **** #
+    branches: [ main ]
 
 jobs:
   build:
@@ -16,7 +17,7 @@ jobs:
 
     - uses: actions/checkout@v2
 
-    # **** Please change 'dotnet-version' to be the version of the .NET SDK used in your project **** #
+    # **** If you've defined a specific dotnet version in global.json, change 'dotnet-version' to the version of the .NET SDK used in your project **** #
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
