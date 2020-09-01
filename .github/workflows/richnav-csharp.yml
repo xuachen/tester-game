@@ -26,7 +26,7 @@ jobs:
     # **** Please change 'working-directory' to be the location where your .SLN file is located **** #
     - name: Install dependencies
       run: dotnet restore
-      working-directory: ./csharp
+      working-directory: ./
       
     - uses: microsoft/RichCodeNavIndexer@v0.1
       with: 
