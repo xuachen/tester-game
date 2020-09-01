@@ -12,6 +12,10 @@ jobs:
   build:
 
     runs-on: windows-latest
+    strategy:
+      matrix:
+      # **** Please change the list to be the folders which contain solutions **** #
+        slnDirs: [ './csharp', './AnotherSolution' ]
 
     steps:
 
@@ -23,10 +27,9 @@ jobs:
       with:
         dotnet-version: 3.1.101
 
-    # **** Please change 'working-directory' to be the location where your .SLN file is located **** #
     - name: Install dependencies
       run: dotnet restore
-      working-directory: ./csharp
+      working-directory: ${{ matrix.slnDirs }}
       
     - uses: microsoft/RichCodeNavIndexer@v0.1
       with: 
