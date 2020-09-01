@@ -1,12 +1,13 @@
-### This template is meant to be used by a C# repository running RichNav
+### This template is meant to be used by a C# repository running RichNav on a scheduled cadence.
+### This is particularly appropriate for reference repositories that aren't updated monthly.
+### Please replace the C# specific steps with steps for your particular language
 ### Please fill anything marked above with a "# **** #" comment with the value appropriate for your repository
 name: Rich Code Navigation (.NET Core)
 
 on:
-  pull_request:
-  push:
-  # **** Add any the name of your default branch, or any branch you want indexed on every push **** #
-    branches: [ main ]
+  schedule:
+    # **** This runs the action on the 14th of every month at midnight. Adjust the schedule as appropriate for your needs **** #
+    - cron: '0 14 * * 1'
 
 jobs:
   build:
