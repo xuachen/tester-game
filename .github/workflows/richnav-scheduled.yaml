@@ -1,8 +1,13 @@
-### This template is meant to be used by a C# repository with multiple solutions running RichNav
+### This template is meant to be used by a C# repository running RichNav on a scheduled cadence.
+### This is particularly appropriate for reference repositories that aren't updated monthly.
+### Please replace the C# specific steps with steps for your particular language
 ### Please fill anything marked above with a "# **** #" comment with the value appropriate for your repository
-name: Rich Code Navigation (.NET Core - Multiple Solutions)
+name: Rich Code Navigation (.NET Core)
 
 on:
+  schedule:
+    # **** This runs the action on the 14th of every month at midnight. Adjust the schedule as appropriate for your needs **** #
+    - cron: '0 14 * * 1'
   pull_request:
   push:
   # **** Add any the name of your default branch, or any branch you want indexed on every push **** #
@@ -12,10 +17,6 @@ jobs:
   build:
 
     runs-on: windows-latest
-    strategy:
-      matrix:
-      # **** Please change the list to be the folders which contain solutions **** #
-        slnDirs: [ './csharp', './AnotherSolution' ]
 
     steps:
 
@@ -27,9 +28,10 @@ jobs:
       with:
         dotnet-version: 3.1.101
 
+    # **** Please change 'working-directory' to be the location where your .SLN file is located **** #
     - name: Install dependencies
       run: dotnet restore
-      working-directory: ${{ matrix.slnDirs }}
+      working-directory: ./csharp
       
     - uses: microsoft/RichCodeNavIndexer@v0.1
       with: 
