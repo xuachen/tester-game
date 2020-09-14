@@ -8,6 +8,7 @@ namespace game
         {
             Interactive block = new GameObject(10, 10);
             block.interact();
+            block.doAThing();
         }
     }
 }
