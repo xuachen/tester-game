@@ -6,5 +6,9 @@
     "license": "MIT",
     "scripts": {
         "build": "tsc -p ./"
+    },
+    "dependencies": {
+        "@types/node": "^14.11.3",
+        "add-two-number": "^0.2.0"
     }
 }
