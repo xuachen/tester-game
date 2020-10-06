@@ -26,6 +26,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    # **** Please update to point to the location where your node dependencies are installed **** #
     - uses: actions/cache@v2
       id: caching-stage
       name: Cache dependencies
@@ -34,6 +35,7 @@ jobs:
         key: ${{ runner.os }}-dependencies-${{ hashfiles('typescript/yarn.lock') }}
         restore-keys: ${{ runner.os }}-dependencies-
 
+    # **** Please update the working-directory to the location where your package.json file resides **** #
     - run: yarn
       working-directory: typescript
       if: steps.caching-stage.outputs.cache-hit != 'true'
