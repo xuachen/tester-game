@@ -35,9 +35,19 @@ jobs:
       with:
         node-version: 12.x
 
+    # **** Please update to point to the location where your node dependencies are installed **** #
+    - uses: actions/cache@v2
+      id: caching-stage
+      name: Cache dependencies
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-dependencies-${{ hashfiles('typescript/yarn.lock') }}
+        restore-keys: ${{ runner.os }}-dependencies-
+
     # **** Please update, at least, the working directory below. You may also want to use npm install instead **** #
     - run: yarn
       working-directory: typescript
+      if: steps.caching-stage.outputs.cache-hit != 'true'
     
     # **** If you use NPM to install packages, please uncomment this task and delete the yarn task **** #
     # - name: npm install

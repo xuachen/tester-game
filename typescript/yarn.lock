@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+add-two-number@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/add-two-number/-/add-two-number-0.2.0.tgz#f21e52b3a328f3551b247489b4b0351465ef363e"
+  integrity sha512-zB+QIdul0cHNXAj1xVAhzhk8WQ8JvLYlp1L3kwZr3zIIgdV+U1kp4DkRJRqutvPgDl1jBG9TcbMU3cWgeY9d7w==
