@@ -6,6 +6,6 @@ export default class Block extends GameObject {
     }
 
     interact(): void {
-        console.log('You get a coin!');
+        console.log('You get a coin, you rock star!');
     }
 }
