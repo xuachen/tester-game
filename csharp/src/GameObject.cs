@@ -15,6 +15,7 @@ namespace game
         public void interact()
         {
             Console.WriteLine("Interacting with GameObject");
+            Console.WriteLine("Nice work! You rock!");
         }
 
         public void draw()
