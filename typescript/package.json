@@ -1,0 +1,14 @@
+{
+    "name": "tester-game",
+    "version": "0.0.1",
+    "description": "A simple Typescript game to test things",
+    "main": "App.js",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc -p ./"
+    },
+    "dependencies": {
+        "@types/node": "^14.11.3",
+        "add-two-number": "^0.2.0"
+    }
+}

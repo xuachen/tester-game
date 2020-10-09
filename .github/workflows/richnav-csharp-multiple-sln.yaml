@@ -1,0 +1,37 @@
+### This template is meant to be used by a C# repository with multiple solutions running RichNav
+### Please fill anything marked above with a "# **** #" comment with the value appropriate for your repository
+name: Rich Code Navigation (.NET Core - Multiple Solutions)
+
+on:
+  pull_request:
+  push:
+  # **** Add any the name of your default branch, or any branch you want indexed on every push **** #
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    strategy:
+      matrix:
+      # **** Please change the list to be the folders which contain solutions **** #
+        slnDirs: [ './csharp', './AnotherSolution' ]
+
+    steps:
+
+    - uses: actions/checkout@v2
+
+    # **** If you've defined a specific dotnet version in global.json, change 'dotnet-version' to the version of the .NET SDK used in your project **** #
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+
+    - name: Install dependencies
+      run: dotnet restore
+      working-directory: ${{ matrix.slnDirs }}
+      
+    - uses: microsoft/RichCodeNavIndexer@v0.1
+      with: 
+        languages: csharp
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
