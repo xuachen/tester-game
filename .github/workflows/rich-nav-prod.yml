@@ -1,4 +1,4 @@
-name: "Rich Navigation Indexing"
+name: "Rich Navigation Indexing - Prod"
 on:
   pull_request:
   push:
