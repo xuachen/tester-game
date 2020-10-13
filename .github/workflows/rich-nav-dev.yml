@@ -13,5 +13,5 @@ jobs:
     - uses: microsoft/RichCodeNavIndexer@v0
       with:
         languages: 'csharp,typescript,java,cpp'
-        environment: 'production'
+        environment: 'development'
       continue-on-error: true
