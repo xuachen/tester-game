@@ -18,7 +18,7 @@ public class SomeSort implements SortAlgorithm {
     }
 
     public static void main(String[] args) {
-        SomeSort pancakeSort = new SomeSort();
+        SomeSort pancakeSort = new SomeSort(); // comment
         pancakeSort.sort(arr);
     }
 }
