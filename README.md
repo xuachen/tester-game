@@ -1,6 +1,6 @@
 # Rich Code Navigation Indexed Code Samples
 
-This is a sample code base used to validate Rich Code Nav indexing against DEV, INT, and PROD environments. 
+This is a sample code base used to validate Rich Code Nav indexing against DEV, INT, and PROD environments.
 
 ## Validation steps
 1. Push any commit to any branch to trigger the build, typically a trivial comment change.
