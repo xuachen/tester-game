@@ -19,7 +19,7 @@ namespace game
 
         public void draw()
         {
-            Console.WriteLine($"Drawing GameObject at position: {this.posX} {this.posY}");
+            Console.WriteLine($"Drawing GameObject at position: {this.posX} {this.posY} - 1");
         }
     }
 }
