@@ -26,6 +26,6 @@ steps:
     languages: 'csharp,typescript,java,cpp'
     githubServiceConnection: 'xuachen'
     environment: production
-    richNavLogOutputDirectory: $(Build.SourcesDirectory)/artifacts/bin
+    isPrivateFeed: false
   continueOnError: true
 
