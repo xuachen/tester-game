@@ -23,9 +23,10 @@ jobs:
           java-version: '11'
           distribution: 'zulu'
       - uses: actions/checkout@v2
+      - uses: jepetty/debug-action@master
       - name: Rich Code Nav Indexer
       - uses: microsoft/RichCodeNavIndexer@v0.1.11
         with:
           languages: javascript,cpp,csharp,java
-          environment: production
+          environment: development
         
