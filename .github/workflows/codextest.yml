@@ -26,4 +26,4 @@ jobs:
         uses: microsoft/RichCodeNavIndexer@v0.1.11
         with:
           languages: javascript,cpp,csharp,java
-          environment: development
+          environment: production
