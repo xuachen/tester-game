@@ -1,0 +1,34 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # - name: Setup Java JDK
+      #   uses: actions/setup-java@v2.1.0
+      #   with:
+      #     java-version: '11'
+      #     distribution: 'zulu'
+      - uses: actions/checkout@v2
+      # - uses: jepetty/debug-action@master
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14
+      - name: Rich Code Nav Indexer
+        uses: microsoft/RichCodeNavIndexer@v0.1
+        with:
+          languages: typescript
+          environment: production
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          typescriptVersion: 0.6.0-next.15
+          
