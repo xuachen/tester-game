@@ -10,12 +10,12 @@ This is a sample code base used to validate Rich Code Nav indexing against DEV, 
 ## Build Status
 ### DEV
 
-[![Build Status](https://dev.azure.com/devdiv/Personal/_apis/build/status/RichNavIndexCodeSamples/RichNavIndex-GitHub-DEV)](https://dev.azure.com/devdiv/Personal/_build/latest?definitionId=12798)
+[![Build Status](https://devdiv.visualstudio.com/Personal/_apis/build/status/RichNavIndexCodeSamples/RichNavIndex-GitHub-DEV?branchName=main)](https://devdiv.visualstudio.com/Personal/_build/latest?definitionId=12798&branchName=main)
 
 ### INT
 
-[![Build Status](https://dev.azure.com/devdiv/Personal/_apis/build/status/RichNavIndexCodeSamples/RichNavIndex-GitHub-INT)](https://dev.azure.com/devdiv/Personal/_build/latest?definitionId=12796)
+[![Build Status](https://devdiv.visualstudio.com/Personal/_apis/build/status/RichNavIndexCodeSamples/RichNavIndex-GitHub-INT?branchName=main)](https://devdiv.visualstudio.com/Personal/_build/latest?definitionId=12796&branchName=main)
 
 ### PROD
 
-[![Build Status](https://dev.azure.com/devdiv/Personal/_apis/build/status/RichNavIndexCodeSamples/RichNavIndex-GitHub-PROD)](https://dev.azure.com/devdiv/Personal/_build/latest?definitionId=12797)
+[![Build Status](https://devdiv.visualstudio.com/Personal/_apis/build/status/RichNavIndexCodeSamples/RichNavIndex-GitHub-PROD?branchName=main)](https://devdiv.visualstudio.com/Personal/_build/latest?definitionId=12797&branchName=main)
