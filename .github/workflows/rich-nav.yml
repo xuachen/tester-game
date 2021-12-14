@@ -13,7 +13,7 @@ jobs:
     - uses: actions/setup-java@v2.4.0
       with: 
         java-version: '11'
-        distribution: 'microsoft'
+        distribution: 'zulu'
     - uses: microsoft/RichCodeNavIndexer@v0.1
       with:
         languages: 'csharp,typescript,java,cpp'
