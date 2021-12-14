@@ -10,8 +10,12 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-java@v2.4.0
+      with: 
+        java-version: '11'
+        distribution: 'microsoft'
     - uses: microsoft/RichCodeNavIndexer@v0.1
       with:
         languages: 'csharp,typescript,java,cpp'
-        environment: 'production'
+        environment: 'development'
       continue-on-error: true
